@@ -1,0 +1,124 @@
+
+.header{
+    height: 835px;
+    background-color: $header-color;
+}
+.header-top {
+    margin-top: 35px;
+}
+.header-top-top {
+    display: flex;
+    justify-content: space-between;
+}
+.sitenav-item {
+    display: flex;
+    gap: 34px;
+    
+}
+.sitenav-link{
+    color: $white-color;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    transition: 0.3s;
+}
+.sitenav-link:hover{
+    color: $brown-color;
+}
+hr{
+    margin-top: 35px;
+    
+}
+@media screen and (max-width:768px){
+    .sitenav{
+        display: none;
+    }
+}
+
+.header-bottom {
+    margin-top: 20px;
+    display: flex;
+}
+.left-side {
+    margin-top: 128px;
+    z-index: 1;
+}
+.new {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $white-color;
+    margin-bottom: 25px;
+}
+.mark {
+    width: 396px;
+    margin-bottom: 25px;
+}
+.natural {
+    width: 349px;
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.btn {
+    width: 160px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: $brown-color;
+    padding-left: 38px;
+    padding-top: 17px;
+    font-size: 1.3rem;
+    color: $white-color;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: $brown-white-color;
+}
+.rigth-side {
+    margin-left: auto;
+    z-index: 0;
+}
+@media screen and (max-width:768px){
+    
+    .left-side{
+        text-align: center;
+        margin-left: 145px;
+    }
+    .btn{
+        padding-left: 0;
+    }
+    .natural{
+        margin-left: 20px;
+    }
+  
+   
+    .rigth-side{
+        margin-left: -565px;
+    }
+}
+@media screen and (max-width:375px){
+    .left-side{
+        margin-left: -40px;
+    }
+    .new{
+        margin-left: 12px;
+    }
+    .mark{
+        width: 328px;
+        font-size: 3.6rem;
+        margin-left: 15px ;
+    }
+    .btn{
+        margin-left: 25px;
+    }
+    .natural{
+        width: 328px;
+        font-size: 1.5rem;
+        margin-left: 15px;
+    }
+    .rigth-side{
+        display: none;
+    }
+    .header-bottom-img{
+        width: 375px;
+    }
+}
